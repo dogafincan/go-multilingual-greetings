@@ -1,2 +1,2 @@
 # go-greetings
-Go module that returns a greeting in one of the languages that I'm studying.
+Go package that returns a greeting in one of the languages that I'm studying.
