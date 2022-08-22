@@ -5,6 +5,10 @@ import (
 	"time"
 )
 
+func init() {
+	rand.Seed(time.Now().UnixNano())
+}
+
 var greetings = [5]string{
 	"안녕하세요",
 	"こんにちは",
@@ -14,7 +18,6 @@ var greetings = [5]string{
 }
 
 func Hello() string {
-	rand.Seed(time.Now().UnixNano())
 	randomIndex := rand.Intn(len(greetings))
 	return greetings[randomIndex]
 }
