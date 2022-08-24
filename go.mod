@@ -1,3 +1,3 @@
-module github.com/go-multilingual-greetings
+module github.com/dogafincan/go-multilingual-greetings
 
 go 1.19
