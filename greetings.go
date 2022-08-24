@@ -9,15 +9,14 @@ func init() {
 	rand.Seed(time.Now().UnixNano())
 }
 
-var greetings = [5]string{
-	"안녕하세요",
-	"こんにちは",
-	"你好",
-	"สวัสดีครับ",
-	"Xin chào",
-}
+func RandomGreeting() string {
+	greetings := [5]string{
+		"안녕하세요",
+		"こんにちは",
+		"你好",
+		"สวัสดีครับ",
+		"Xin chào",
+	}
 
-func Hello() string {
-	randomIndex := rand.Intn(len(greetings))
-	return greetings[randomIndex]
+	return greetings[rand.Intn(len(greetings))]
 }
